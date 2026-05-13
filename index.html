@@ -2,120 +2,227 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Saranya Rangan | Genomic Scientist- Precision Oncology</title>
+<title>Saranya Rangan | Precision Oncology & Genomics</title>
 
 <style>
 
-body{
-font-family: Arial, Helvetica, sans-serif;
+*{
 margin:0;
-background:#f5f7fa;
-color:#333;
-line-height:1.6;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
+
+body{
+font-family: "Segoe UI", sans-serif;
+background:#f4f8f9;
+color:#24343f;
+line-height:1.7;
+}
+
+/* HEADER */
 
 header{
-background:#1c2127;
+background:linear-gradient(135deg,#0b3c49,#155e75);
 color:white;
-padding:50px 20px;
+padding:70px 20px 60px;
 text-align:center;
-}
-
-header h1{
-margin:10px 0;
-font-size:40px;
-}
-
-header p{
-font-size:18px;
 }
 
 .profile-photo{
-width:150px;
+width:160px;
+height:160px;
+object-fit:cover;
 border-radius:50%;
-margin-top:15px;
+border:5px solid rgba(255,255,255,0.25);
+margin-bottom:20px;
 }
+
+header h1{
+font-size:44px;
+margin-bottom:10px;
+font-weight:700;
+}
+
+header p{
+font-size:20px;
+opacity:0.95;
+}
+
+/* NAVBAR */
 
 nav{
 background:white;
-padding:15px;
+padding:18px;
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 2px 10px rgba(0,0,0,0.06);
 text-align:center;
-box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
 nav a{
-margin:0 15px;
+margin:0 16px;
 text-decoration:none;
-font-weight:bold;
-color:#2c3e50;
+font-weight:600;
+color:#155e75;
+transition:0.3s;
 }
 
 nav a:hover{
-color:#0077cc;
+color:#0b3c49;
 }
+
+/* CONTAINER */
 
 .container{
-max-width:900px;
+max-width:1100px;
 margin:auto;
-padding:40px;
-background:white;
-margin-top:30px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+padding:40px 25px;
 }
 
+/* SECTIONS */
+
 section{
-margin-bottom:40px;
+background:white;
+padding:35px;
+margin-bottom:30px;
+border-radius:18px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
 }
 
 h2{
-border-bottom:2px solid #eee;
+font-size:30px;
+margin-bottom:25px;
+color:#0b3c49;
+position:relative;
 padding-bottom:10px;
-color:#2c3e50;
+}
+
+h2::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:70px;
+height:4px;
+background:#1aa3a8;
+border-radius:10px;
+}
+
+h3{
+margin-top:20px;
+font-size:24px;
+color:#155e75;
+}
+
+.role{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+margin:8px 0 18px;
+font-weight:600;
+color:#4d6470;
 }
 
 ul{
-padding-left:20px;
+padding-left:22px;
+margin-top:12px;
 }
 
 li{
-margin-bottom:8px;
+margin-bottom:12px;
 }
 
-footer{
-background:#1c2127;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
+/* SKILLS GRID */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:18px;
 }
+
+.skill-box{
+background:#eef7f8;
+padding:18px;
+border-radius:12px;
+}
+
+/* BLOG POSTS */
+
+.blog-card{
+background:#eef7f8;
+padding:22px;
+border-radius:14px;
+margin-bottom:18px;
+transition:0.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-4px);
+}
+
+.blog-card h4{
+color:#155e75;
+margin-bottom:10px;
+}
+
+/* CONTACT */
 
 .contact a{
-color:#0077cc;
+color:#155e75;
 text-decoration:none;
+font-weight:600;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+background:#0b3c49;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:34px;
+}
+
+nav a{
+display:inline-block;
+margin:10px;
+}
+
+section{
+padding:25px;
+}
+
 }
 
 </style>
-
 </head>
-
 
 <body>
 
 <header>
 
-<img src="profile.jpg" class="profile-photo">
+<img src="profile.jpg" alt="Saranya Rangan" class="profile-photo">
 
 <h1>Saranya Rangan V</h1>
 
-<p>Genomic Scientist | Precision Medicine Oncology</p>
+<p>Precision Oncology | Cancer Genomics | Scientific Leadership</p>
 
 </header>
-
 
 <nav>
 
@@ -124,11 +231,11 @@ text-decoration:none;
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
 <a href="#publications">Publications</a>
+<a href="#blog">Blog Posts</a>
 <a href="#education">Education</a>
 <a href="#contact">Contact</a>
 
 </nav>
-
 
 <div class="container">
 
@@ -137,157 +244,174 @@ text-decoration:none;
 <h2>About</h2>
 
 <p>
-Experienced oncology professional with expertise in scientific communication,
-medical data analysis, leadership, and cross-functional collaboration across
-clinical research and medical affairs.
+Experienced oncology professional with 8.5+ years of expertise in precision medicine, cancer genomics, scientific communication, clinical data interpretation, and leadership across clinical research and medical affairs.
 </p>
 
-<p>
-With over 8.5 years of experience in precision medicine for oncology,
-I currently serve as Manager of Knowledgebase at Velsera, where I lead a team of
-12 and oversee clinical trial curation and verification of scientific data from
-oncology databases, clinical guidelines, drug labels, and clinical trials.
-</p>
+<br>
 
 <p>
-Previously worked as a senior genome analyst interpreting oncology NGS data,
-classifying variants, and generating clinical reports for physicians and patients.
-I also worked as a cancer research scientist focusing on drug modeling,
-cell signaling pathways, and precision medicine research.
+Currently serving as Manager – Knowledgebase at Velsera, leading a multidisciplinary team focused on clinical trial curation, scientific content validation, and oncology knowledgebase delivery. Experienced in working with genomic databases, clinical guidelines, drug labels, and oncology clinical trials to support precision medicine workflows.
+</p>
+
+<br>
+
+<p>
+Previously worked as a Senior Genome Analyst interpreting oncology NGS data, classifying genomic variants, generating clinical reports, and collaborating with leading oncologists across India. Earlier experience includes computational oncology research, cancer pathway modeling, drug mechanism analysis, and predictive therapeutic simulations.
 </p>
 
 </section>
-
 
 <section id="expertise">
 
-<h2>Expertise</h2>
+<h2>Core Expertise</h2>
 
-<ul>
+<div class="skills-grid">
 
-<li>Precision Oncology</li>
-<li>Cancer Genomics</li>
-<li>Variant Interpretation and Classification</li>
-<li>Clinical Trial Knowledgebases</li>
-<li>Scientific Communication with Oncology Stakeholders</li>
-<li>NGS Data Interpretation</li>
-<li>Clinical Data Curation</li>
-<li>Genomic Biomarker Research</li>
+<div class="skill-box">Precision Oncology</div>
+<div class="skill-box">Cancer Genomics</div>
+<div class="skill-box">Clinical Trial Curation</div>
+<div class="skill-box">Variant Interpretation & Classification</div>
+<div class="skill-box">Scientific Communication</div>
+<div class="skill-box">Oncology Knowledgebases</div>
+<div class="skill-box">NGS Data Interpretation</div>
+<div class="skill-box">Computational Biology</div>
 
-</ul>
+</div>
 
 </section>
-
 
 <section id="skills">
 
 <h2>Technical Skills</h2>
 
-<ul>
+<div class="skills-grid">
 
-<li>Biological Databases: COSMIC, ClinVar, UCSC, CIViC</li>
+<div class="skill-box">
+<b>Databases & Resources</b><br>
+COSMIC, ClinVar, UCSC, CIViC, Ensembl, UniProt
+</div>
 
-<li>Guidelines: FDA, EMA, NCCN, ASCO, ESMO</li>
+<div class="skill-box">
+<b>Clinical Guidelines</b><br>
+FDA, EMA, NCCN, ASCO, ESMO, ACMG, CAP/AMP
+</div>
 
-<li>Clinical Trials: ClinicalTrials.gov, EUCTR</li>
+<div class="skill-box">
+<b>Bioinformatics Tools</b><br>
+IGV, BaseSpace, VarSome, GnomAD, VEP, Franklin
+</div>
 
-<li>Ontologies: SNOMED, NCBI Gene, HGVS Nomenclature</li>
+<div class="skill-box">
+<b>Workflow & Operations</b><br>
+JIRA, Jenkins, AWS, MatrixALM, Trello, Workday
+</div>
 
-<li>Bioinformatics Tools: TransVar, GnomAD, MutationTaster, VarSome, BDGP, Ensembl, UniProt, Franklin, VEP</li>
-
-<li>Variant Interpretation Tools: IGV, BaseSpace (Illumina), CGW (Velsera)</li>
-
-<li>Variant Classification Standards: CAP/AMP/ASCO, ACMG, FDA</li>
-
-<li>Tools: Jenkins, JIRA, AWS, MatrixALM, Trello, Microsoft Teams, Workday</li>
-
-<li>Advanced Microsoft Office: Word, Excel, PowerPoint</li>
-
-</ul>
+</div>
 
 </section>
-
 
 <section id="experience">
 
 <h2>Professional Experience</h2>
 
-<h3>Breakthrough Genomics</h3>
-
-<p><b>Somatic Curation Scientist</b> | Nov 2025 – Present</p>
-
-<ul>
-
-<li>I work on curating and interpreting somatic variants from oncology sequencing datasets.</li>
-<li>I collaborate closely with bioinformatics and clinical teams to help build and improve somatic interpretation pipelines.</li>
-<li>I also contribute to developing interpretation workflows, knowledge bases, and SOPs, and regularly review scientific literature to support accurate variant classification in line with ACMG/AMP, CAP, and other relevant guidelines.</li>
-
-</ul>
-
 <h3>Velsera</h3>
 
-<p><b>Manager – Knowledgebase (Clinical Trials)</b> | Apr 2025 – Oct 2025</p>
+<div class="role">
+<span>Manager – Knowledgebase (Clinical Trials)</span>
+<span>Apr 2025 – Present</span>
+</div>
 
 <ul>
 
-<li>Subject matter expert providing mentorship on curation strategies and rule engine logic.</li>
-<li>Client-facing scientific communication and risk mitigation in SDLC.</li>
-<li>Member of change control board improving processes and workflows.</li>
-<li>Leading a team of 12 managing agile project delivery and knowledgebase quality.</li>
+<li>Provide technical and scientific mentorship on curation strategies, rule engine logic, and downstream content impact analysis.</li>
+
+<li>Lead a team of 12 across daily operations, sprint planning, workflow management, quality compliance, and timely knowledgebase delivery.</li>
+
+<li>Actively contribute to client-facing scientific communication, SDLC risk identification, RCA investigations, and mitigation strategies.</li>
+
+<li>Collaborate extensively with SMEs and scientific leads to identify process gaps, improve workflows, and implement scalable scientific solutions.</li>
+
+<li>Monitor quality metrics, team performance, delivery velocity, and continuous learning initiatives.</li>
 
 </ul>
 
-
-<p><b>Principal Biocurator – Verification & Validation</b> | Sep 2023 – Mar 2025</p>
+<div class="role">
+<span>Principal Biocurator – Verification & Validation</span>
+<span>Sep 2023 – Mar 2025</span>
+</div>
 
 <ul>
 
-<li>Verification and validation of diagnostic, therapeutic, and prognostic assertions.</li>
-<li>Quality assurance for curated genomic and clinical trial data.</li>
-<li>Performed UAT testing for knowledgebase products used by clinicians.</li>
+<li>Verified and validated diagnostic, prognostic, and therapeutic assertions curated from oncology guidelines, genomic databases, drug labels, literature, and clinical trials.</li>
+
+<li>Designed scientific test cases and performed UAT testing to ensure quality and accuracy of oncology knowledgebase content.</li>
+
+<li>Supported genomic event interpretation, variant classification, and content strategies for oncology clinical genomics products.</li>
+
+<li>Led a team of 3 members focused on scientific quality assurance, workflow optimization, and operational issue resolution.</li>
 
 </ul>
-
 
 <h3>4baseCare</h3>
 
-<p><b>Senior Genome Analyst</b> | Sep 2021 – Aug 2023</p>
+<div class="role">
+<span>Senior Genome Analyst</span>
+<span>Sep 2021 – Aug 2023</span>
+</div>
 
 <ul>
 
-<li>Analyzed and interpreted variants from oncology NGS data.</li>
-<li>Reviewed ~1000 clinical reports ensuring quality and turnaround time.</li>
-<li>Collaborated with oncologists from Apollo Hospitals and CK Birla Hospitals.</li>
+<li>Analyzed and interpreted oncology NGS variants using HGVS annotation standards and ACMG guidelines.</li>
+
+<li>Managed clinical report generation and reviewed approximately 1,000 reports to ensure quality and turnaround compliance.</li>
+
+<li>Collaborated with oncologists from Apollo Hospitals, CK Birla Hospitals, and other oncology centers for scientific case discussions.</li>
+
+<li>Worked closely with bioinformatics and laboratory teams to improve report quality and support new panel development.</li>
+
+<li>Led internal database maintenance, quality assurance initiatives, recruitment, and training of analysts and interns.</li>
 
 </ul>
-
 
 <h3>MedGenome Labs</h3>
 
-<p><b>Genome Analyst</b> | Feb 2021 – Sep 2021</p>
+<div class="role">
+<span>Genome Analyst</span>
+<span>Feb 2021 – Sep 2021</span>
+</div>
 
 <ul>
 
-<li>Analyzed genomic variants for rare disease diagnostics.</li>
-<li>Generated clinical reports using HGVS annotation and ACMG guidelines.</li>
+<li>Analyzed genomic variants and generated clinical reports for rare disease diagnostics.</li>
+
+<li>Performed literature curation, variant interpretation, classification, and validation using ACMG guidelines and IGV.</li>
+
+<li>Produced over 200 clinical reports for Mendelian disorder patients.</li>
 
 </ul>
 
-
 <h3>Cellworks Research</h3>
 
-<p><b>Scientist – R&D</b> | Apr 2017 – Dec 2020</p>
+<div class="role">
+<span>Scientist – R&D</span>
+<span>Apr 2017 – Dec 2020</span>
+</div>
 
 <ul>
 
-<li>Worked on cancer pathway modeling and drug mechanism analysis.</li>
-<li>Developed mathematical models for human cell signaling pathways.</li>
-<li>Designed pharmacodynamic and pharmacokinetic drug simulations.</li>
+<li>Worked on cancer pathway modeling, drug mechanism analysis, and predictive therapeutic simulations.</li>
+
+<li>Built mathematical models representing human cell physiology and signaling pathways.</li>
+
+<li>Performed literature mining and analyzed global clinical trial data for oncology drug evaluation.</li>
+
+<li>Developed pharmacodynamic and pharmacokinetic simulation models for cancer therapeutics.</li>
+
+<li>Contributed to oncology drug databases, validation workflows, and automation initiatives.</li>
 
 </ul>
 
 </section>
-
 
 <section id="publications">
 
@@ -296,19 +420,52 @@ cell signaling pathways, and precision medicine research.
 <ul>
 
 <li>
-Pan-cancer analysis of homologous recombination DNA repair (HRR) pathway genes
-in the Indian population. Cancer Research, Statistics, and Treatment (2023).
+Pan-cancer analysis of the spectrum of homologous recombination DNA repair (HRR) pathway genes in the Indian population: A retrospective observational study. Cancer Research, Statistics, and Treatment (2023).
 </li>
 
 <li>
-Molecular insights from comprehensive genomic profiling in metastatic colorectal cancer
-in South Asian population. Cancer Research, Statistics and Treatment (2024).
+Molecular insights from comprehensive genomic profiling data in advanced metastatic colorectal cancer in South Asian population: A retrospective observational study. Cancer Research, Statistics and Treatment (2024).
 </li>
 
 </ul>
 
 </section>
 
+<section id="blog">
+
+<h2>Blog Posts</h2>
+
+<div class="blog-card">
+
+<h4>Understanding Precision Oncology in Clinical Practice</h4>
+
+<p>
+Exploring how genomic biomarkers, targeted therapies, and molecular profiling are transforming cancer treatment decisions.
+</p>
+
+</div>
+
+<div class="blog-card">
+
+<h4>The Growing Role of Clinical Trial Knowledgebases</h4>
+
+<p>
+Insights into oncology trial curation, evidence validation, and the importance of structured scientific content in precision medicine.
+</p>
+
+</div>
+
+<div class="blog-card">
+
+<h4>Interpreting NGS Variants in Oncology</h4>
+
+<p>
+A practical overview of variant classification frameworks including ACMG, CAP/AMP, and real-world clinical interpretation workflows.
+</p>
+
+</div>
+
+</section>
 
 <section id="education">
 
@@ -316,16 +473,13 @@ in South Asian population. Cancer Research, Statistics and Treatment (2024).
 
 <p>
 
-Anna University, Chennai  
-<br>
-B.Tech – Biotechnology (2012–2016)
-<br>
-Distinguished Alumni Award for core employment
+<b>Anna University, Chennai</b><br>
+B.Tech – Biotechnology (2012–2016)<br>
+Distinguished Alumni Award for Core Employment
 
 </p>
 
 </section>
-
 
 <section id="contact">
 
@@ -333,7 +487,11 @@ Distinguished Alumni Award for core employment
 
 <p class="contact">
 
-Email: <a href="mailto:saranyapoorvi@gmail.com">saranyapoorvi@gmail.com</a>
+Email:
+<a href="mailto:saranyapoorvi@gmail.com">
+saranyapoorvi@gmail.com
+</a>
+
 <br><br>
 
 LinkedIn:
@@ -347,10 +505,9 @@ linkedin.com/in/saranya-rangan
 
 </div>
 
-
 <footer>
 
-<p>© 2026 Saranya Rangan</p>
+<p>© 2026 Saranya Rangan V</p>
 
 </footer>
 
